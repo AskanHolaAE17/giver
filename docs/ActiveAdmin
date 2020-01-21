@@ -1,8 +1,10 @@
 To register your model, run:
 
-$> rails g active_admin:resource
-        [MyModelName]
+$> rails g active_admin:resource [MyModelName]
 
+
+rails g active_admin:resource ModelName
+      create  app/admin/model_names.rb
 
 
       invoke    active_record
