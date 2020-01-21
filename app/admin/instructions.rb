@@ -5,7 +5,7 @@ ActiveAdmin.register Instruction do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :name, :page, :type, :descr
+  permit_params :name, :page, :type, :type, :descr, :additional
   #
   # or
   #

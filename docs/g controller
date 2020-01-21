@@ -1,0 +1,17 @@
+rails g controller Carts person
+      create  app/controllers/carts_controller.rb
+       route  get 'carts/person'
+      invoke  erb
+      create    app/views/carts
+      create    app/views/carts/person.html.erb
+      invoke  test_unit
+      create    test/controllers/carts_controller_test.rb
+      invoke  helper
+      create    app/helpers/carts_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/carts.coffee
+      invoke    scss
+      create      app/assets/stylesheets/carts.scss
+
