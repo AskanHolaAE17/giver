@@ -9,3 +9,4 @@ alias gp='git push';
 
 alias hp='git push heroku master';
 alias hr='heroku run rails db:migrate';
+;

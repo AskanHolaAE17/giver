@@ -1,0 +1,8 @@
+rails g model Cart
+      invoke  active_record
+      create    db/migrate/20200121162111_create_carts.rb
+      create    app/models/cart.rb
+      invoke    test_unit
+      create      test/models/cart_test.rb
+      create      test/fixtures/carts.yml
+
