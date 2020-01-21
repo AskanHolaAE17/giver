@@ -1,0 +1,42 @@
+To register your model, run:
+
+$> rails g active_admin:resource
+        [MyModelName]
+
+
+
+      invoke    active_record
+      create      db/migrate/20200121103111_devise_create_admin_users.rb
+      create      app/models/admin_user.rb
+      invoke      test_unit
+      create        test/models/admin_user_test.rb
+      create        test/fixtures/admin_users.yml
+      insert      app/models/admin_user.rb
+       route    devise_for :admin_users
+        gsub    app/models/admin_user.rb
+        gsub    config/routes.rb
+      append    db/seeds.rb
+      create  config/initializers/active_admin.rb
+      create  app/admin
+      create  app/admin/dashboard.rb
+      create  app/admin/admin_users.rb
+      insert  config/routes.rb
+    generate  active_admin:assets
+      create  app/assets/javascripts/active_admin.js
+      create  app/assets/stylesheets/active_admin.scss
+      create  db/migrate/20200121103114_create_active_admin_comments.rb
+      
+      
+      
+      
+      
+Dependencies
+We try not to reinvent the wheel, so Active Admin is built with other open source projects:
+
+Tool	Description
+Arbre	Ruby -> HTML, just like that.
+Devise	Powerful, extensible user authentication
+Formtastic	A Rails form builder plugin with semantically rich and accessible markup
+Inherited Resources	Simplifies controllers with pre-built RESTful controller actions
+Kaminari	Elegant pagination for any sort of collection
+Ransack	Provides a simple search API to query your data      
