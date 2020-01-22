@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_22_085313) do
+ActiveRecord::Schema.define(version: 2020_01_22_091108) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -40,11 +40,11 @@ ActiveRecord::Schema.define(version: 2020_01_22_085313) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
-    t.boolean "active", default: false
+    t.boolean "active", default: true
     t.string "connect_name"
     t.string "connect_type"
     t.string "tel_number"
-    t.decimal "total_sum"
+    t.decimal "total_sum", default: "0.0"
     t.boolean "payed", default: false
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
