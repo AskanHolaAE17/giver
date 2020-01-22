@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active: false
+  total_sum: 9.99
+  connect_name: MyString
+  connect_type: MyString
+  tel_number: MyString
+  carts_count: 1
+  carts_success_count: 1
+  unpayed_carts: 1
+  gifts_count: 1
+  dates_of_payments: MyText
+  last_activity_date: 2020-01-22 10:53:13
+  way_on_site: MyText
+  feedbacks_count: 1
+  feedbacked_by_site: 1
+  feedbacks: MyText
+  subscribed: false
+
+two:
+  active: false
+  total_sum: 9.99
+  connect_name: MyString
+  connect_type: MyString
+  tel_number: MyString
+  carts_count: 1
+  carts_success_count: 1
+  unpayed_carts: 1
+  gifts_count: 1
+  dates_of_payments: MyText
+  last_activity_date: 2020-01-22 10:53:13
+  way_on_site: MyText
+  feedbacks_count: 1
+  feedbacked_by_site: 1
+  feedbacks: MyText
+  subscribed: false
