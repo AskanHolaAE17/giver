@@ -11,7 +11,7 @@ ActiveAdmin.register Instruction do
   # or
   #
   # permit_params do
-  #   permitted = [:name, :page, :type, :descr]
+  #   permitted = [:name, :page, :type, :descr, :additional]
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
