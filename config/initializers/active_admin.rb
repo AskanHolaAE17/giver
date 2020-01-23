@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 ActiveAdmin.setup do |config|
   # == Site Title
   #
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Giver"
+  config.site_title = 'Giver'
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -121,7 +123,8 @@ ActiveAdmin.setup do |config|
 
   # == Admin Comments
   #
-  # This allows your users to comment on any resource registered with Active Admin.
+  # This allows your users to comment on any resource
+  # registered with Active Admin.
   #
   # You can completely disable comments:
   # config.comments = false
@@ -157,7 +160,7 @@ ActiveAdmin.setup do |config|
   # You can exclude possibly sensitive model attributes from being displayed,
   # added to forms, or exported by default by ActiveAdmin
   #
-  config.filter_attributes = [:encrypted_password, :password, :password_confirmation]
+  config.filter_attributes = %i[encrypted_password password password_confirmation]
 
   # == Localize Date/Time Format
   #
@@ -196,8 +199,9 @@ ActiveAdmin.setup do |config|
 
   # == Create Another Checkbox
   #
-  # Create another checkbox is disabled by default. You can customize it for individual
-  # resources or you can enable them globally from here.
+  # Create another checkbox is disabled by default.
+  # You can customize it for individual resources or
+  # you can enable them globally from here.
   #
   # config.create_another = true
 
@@ -210,8 +214,11 @@ ActiveAdmin.setup do |config|
   # To load a stylesheet:
   #   config.register_stylesheet 'my_stylesheet.css'
   #
-  # You can provide an options hash for more control, which is passed along to stylesheet_link_tag():
+  # You can provide an options hash for more control,
+  # which is passed along to stylesheet_link_tag():
+  #
   #   config.register_stylesheet 'my_print_stylesheet.css', media: :print
+  #
   #
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
@@ -226,13 +233,16 @@ ActiveAdmin.setup do |config|
 
   # == Menu System
   #
-  # You can add a navigation menu to be used in your application, or configure a provided menu
+  # You can add a navigation menu to be used in your
+  # application, or configure a provided menu
   #
-  # To change the default utility navigation to show a link to your website & a logout btn
+  # To change the default utility navigation to show
+  # a link to your website & a logout btn
   #
   #   config.namespace :admin do |admin|
   #     admin.build_menu :utility_navigation do |menu|
-  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
+  #       menu.add label: "My Great Website",
+  #                url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
   #       admin.add_logout_button_to_menu menu
   #     end
   #   end
@@ -241,7 +251,8 @@ ActiveAdmin.setup do |config|
   #
   #   config.namespace :admin do |admin|
   #     admin.build_menu :default do |menu|
-  #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
+  #       menu.add label: "My Great Website",
+  #                url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
   #     end
   #   end
 
@@ -293,7 +304,9 @@ ActiveAdmin.setup do |config|
   #
   # config.include_default_association_filters = true
 
-  # config.maximum_association_filter_arity = 256 # default value of :unlimited will change to 256 in a future version
+  # default value of :unlimited will change to 256 in a future version
+  # config.maximum_association_filter_arity = 256
+  #
   # config.filter_columns_for_large_association, [
   #    :display_name,
   #    :full_name,
