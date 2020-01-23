@@ -1,11 +1,10 @@
 class CartsController < ApplicationController
 
   def person
-    @introductions = Instruction.where   page: 'presentation'
-    @introduction  = Instruction.find_by name: 'introduction'
+    @introductions = Instruction.where page: 'presentation'
     
-    @greeting      = @introduction.additional
-    @introduction  = @introduction.descr
+    @greeting      = CartsPerson::Greeting.call(@introductions)
+    @introduction  = CartsPerson::Introduction.call(@introductions)
   end
   
 end
