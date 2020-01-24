@@ -1,0 +1,8 @@
+rails g model Step
+      invoke  active_record
+    conflict    db/migrate/20200124094324_create_steps.rb
+Another migration is already named create_steps: /home/vitalina/giver/db/migrate/20200124094002_create_steps.rb. 
+
+Use --force to replace this migration or --skip to ignore conflicted file.
+
+rails g model Modelname --skip
