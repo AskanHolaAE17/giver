@@ -6,6 +6,6 @@
   
 %main
   -@persons.each do |person|        
-    = link_to 'carts/combo' do
+    = link_to root_path + 'gift/' + person.title do
       =image_tag person.img
 
