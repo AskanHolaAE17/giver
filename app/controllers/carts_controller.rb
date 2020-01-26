@@ -7,5 +7,11 @@ class CartsController < ApplicationController
 
     @greeting      = CartsPerson::Greeting.call(@introductions)
     @introduction  = CartsPerson::Introduction.call(@introductions)
+    
+    @persons       = Person.all
+  end
+  
+  def combo
+    CartsCombo::TheCombo.call
   end
 end
