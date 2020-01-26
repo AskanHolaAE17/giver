@@ -9,8 +9,9 @@ ActiveAdmin.register User do
   permit_params :active, :total_sum, :connect_name, :connect_type,
                 :tel_number, :carts_count, :carts_success_count,
                 :unpayed_carts, :gifts_count, :dates_of_payments,
-                :last_activity_date, :way_on_site, :feedbacks_count,
-                :feedbacked_by_site, :feedbacks, :subscribed
+                :last_activity_datetime, :way_on_site, :feedbacks_count,
+                :feedbacked_by_site, :feedbacks, :subscribed,
+                :encrypted_identifier
   #
   # or
   #
@@ -18,8 +19,9 @@ ActiveAdmin.register User do
   #   permitted = [:active, :total_sum, :connect_name, :connect_type,
   #                :tel_number, :carts_count, :carts_success_count,
   #                :unpayed_carts, :gifts_count, :dates_of_payments,
-  #                :last_activity_date, :way_on_site, :feedbacks_count,
-  #                :feedbacked_by_site, :feedbacks, :subscribed]
+  #                :last_activity_datetime, :way_on_site, :feedbacks_count,
+  #                :feedbacked_by_site, :feedbacks, :subscribed,
+  #                :encrypted_identifier]
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end

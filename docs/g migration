@@ -4,15 +4,6 @@ rails g model Step
 Another migration is already named create_steps: /home/vitalina/giver/db/migrate/20200124094002_create_steps.rb. 
 
 Use --force to replace this migration or --skip to ignore conflicted file.
-
 rails g model Modelname --skip
 
-
-
-rename_column :table, :old_column, :new_column
-Update:
-
-You'll probably want to create a separate migration to do this. (Rename FixColumnName as you will)
-script/generate migration FixColumnName
-# creates  db/migrate/xxxxxxxxxx_fix_column_name.rb
 

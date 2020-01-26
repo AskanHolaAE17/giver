@@ -1,11 +1,12 @@
 %header
 
-  =@greeting
+  =@introduction.additional
   %br/  
-  =@introduction
+  =@introduction.descr
   
 %main
   -@persons.each do |person|        
-    = link_to root_path + 'gift/' + person.title do
+    = link_to root_path + 'gift/' + person.title + '/' + @user.encrypted_identifier do
       =image_tag person.img
+  
 

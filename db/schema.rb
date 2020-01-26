@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_26_110517) do
+ActiveRecord::Schema.define(version: 2020_01_26_165750) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 2020_01_26_110517) do
     t.integer "unpayed_carts", default: 0
     t.integer "gifts_count", default: 0
     t.text "dates_of_payments", default: ""
-    t.datetime "last_activity_date"
+    t.datetime "last_activity_datetime"
     t.text "way_on_site", default: ""
     t.integer "feedbacks_count", default: 0
     t.integer "feedbacked_by_site", default: 0
@@ -103,6 +103,7 @@ ActiveRecord::Schema.define(version: 2020_01_26_110517) do
     t.boolean "subscribed", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "encrypted_identifier"
   end
 
 end

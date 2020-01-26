@@ -2,16 +2,27 @@
 
 # Controller for Carts
 class CartsController < ApplicationController
-  def person
-    @introductions = Instruction.where page: 'presentation'
 
-    @greeting      = CartsPerson::Greeting.call(@introductions)
-    @introduction  = CartsPerson::Introduction.call(@introductions)
+  # before_action :set_current_user
+
+  def person
+    @introduction = (Instruction.where page: 'presentation').find_by name: 'introduction'
     
-    @persons       = Person.all
+    @persons      = Person.all
+    @user = CartsPerson::GenerateUser.call     
   end
   
   def combo
-    CartsCombo::TheCombo.call
+    @person       = Person.find_by title: params[:person_title]         
+    # @user         = CartsCombo::SetUserData.call(@user)  
   end
+  
+  
+  
+  private
+ 
+  # def set_current_user
+  #   @user = (User.find_by encrypted_identifier: params[:user_encrypted_identifier]) || User.new     
+  # end
+  
 end
